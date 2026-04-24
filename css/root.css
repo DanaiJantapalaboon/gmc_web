@@ -1,5 +1,5 @@
 :root {
     --gmc-color: #663695;
-    --gmc-darker-color: #2b173f;
-    --gmc-color-gradient: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, var(--gmc-darker-color) 100%);
+    --gmc-darker-color: #351c4f;
+    --gmc-color-gradient: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, var(--gmc-color) 100%);
 }

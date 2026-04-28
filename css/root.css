@@ -1,5 +1,27 @@
 :root {
     --gmc-color: #663695;
+    --gmc-background: #EAE4EA;
     --gmc-darker-color: #351c4f;
     --gmc-color-gradient: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, var(--gmc-color) 100%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Kanit", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    background-color: var(--gmc-background);
+}
+a {
+    color: #fff;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+a:hover {
+    text-shadow: 0 0 10px #f8ffb8, 0 0 20px #f8ffb8, 0 0 30px #f8ffb8;
 }

@@ -2,31 +2,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: "Kanit", sans-serif;
-    font-weight: 300;
-    font-style: normal;
-}
-
-/* Topbar */
 .topbar {
     background: var(--gmc-color-gradient);
     color: white;
     font-size: 14px;
     padding: 7px 0;
 }
-/* .topbar2 {
-    background: 
-        linear-gradient(0deg, #fff 0%, transparent 50%),
-        linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, var(--gmc-color) 100%);
-    padding: 10px;
-} */
 
 
 /* Make logos responsive on small screens */
@@ -48,14 +29,36 @@ body {
     }
 }
 
+/* Navbar */
+.navbar {
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    border-bottom: 5px solid var(--gmc-darker-color);
+}
 
+/* Navbar capsule hover effect */
+.navbar-nav .nav-link {
+    position: relative;
+    padding: 8px 16px;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+}
 
+/* Hover effect */
+.navbar-nav .nav-link:hover {
+    background-color: var(--gmc-darker-color);
+    color: #fff;
+}
 
-        /* Navbar */
-        .navbar {
-            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-            border-bottom: 5px solid var(--gmc-darker-color);
-        }
+/* Active state (current page) */
+.navbar-nav .nav-link.active {
+    background-color: var(--gmc-darker-color);
+    color: #fff;
+}
+
+/* Smooth dropdown alignment */
+.navbar-nav .dropdown-menu {
+    border-radius: 12px;
+}
 
 
 .dropdown-menu {
@@ -101,6 +104,18 @@ body {
             box-shadow: 0 10px 30px rgba(0,0,0,0.1);
         }
 
+
+
+.carousel-control-prev,
+.carousel-control-next {
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.carousel:hover .carousel-control-prev,
+.carousel:hover .carousel-control-next {
+    opacity: 1;
+}
 
         /* Footer */
 .footer-dark {
@@ -218,32 +233,3 @@ body {
         rgba(255,255,255,1) 100%
     );
 } */
-
-
-
-
-
-/* Navbar capsule hover effect */
-.navbar-nav .nav-link {
-    position: relative;
-    padding: 8px 16px;
-    border-radius: 50px;
-    transition: all 0.3s ease;
-}
-
-/* Hover effect */
-.navbar-nav .nav-link:hover {
-    background-color: var(--gmc-darker-color);
-    color: #fff;
-}
-
-/* Active state (current page) */
-.navbar-nav .nav-link.active {
-    background-color: var(--gmc-darker-color);
-    color: #fff;
-}
-
-/* Smooth dropdown alignment */
-.navbar-nav .dropdown-menu {
-    border-radius: 12px;
-}

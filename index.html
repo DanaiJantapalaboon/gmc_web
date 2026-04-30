@@ -162,12 +162,10 @@
 </section>
 
 <!-- Services -->
-<section class="">
-    <div class="container text-center">
+<!-- <section class=""> -->
+    <section class="container text-center">
         <h2 class="fw-bold mb-5">งานบริการของศูนย์การแพทย์จีโนมิกส์</h2>
-
         <div class="row g-4">
-
             <div class="col-md-4">
                 <a href="">
                     <div class="card p-4 shadow">
@@ -276,8 +274,86 @@
             </div>
 
         </div>
+    </section>
+<!-- </section> -->
+
+
+
+
+<!-- Complain -->
+<!-- <section class=""> -->
+    <div class="container mb-5">
+        <div class="text-center mb-4">
+            <h2 class="fw-bold">ข้อเสนอแนะ / ข้อร้องเรียน</h2>
+        </div>
+        <form action="" method="POST" class="p-5 rounded shadow bg-white">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="mb-3">
+                        <label for="email" class="form-label">อีเมลล์ (ใช้สำหรับติดต่อกลับ) <span class="text-danger"> *</span></label>
+                        <input type="email" class="form-control" name="email" id="email" required maxlength="120">
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="mb-3">
+                        <label for="name" class="form-label">ชื่อผู้ติดต่อ <span class="text-danger"> *</span></label>
+                        <input type="name" class="form-control" name="name" id="name" required maxlength="120">
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="mb-3">
+                        <label for="tel" class="form-label">เบอร์โทรศัพท์</label>
+                        <input type="tel" class="form-control" name="tel" id="tel" maxlength="15">
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <label for="purpose" class="form-label">วัตถุประสงค์ <span class="text-danger"> *</span></label>
+                    <select class="form-select" name="purpose" id="purpose" aria-label="purpose">
+                        <option selected disabled>...</option>
+                        <option class="fw-light" value="0">ร้องเรียน</option>
+                        <option class="fw-light" value="1">สอบถามข้อมูล</option>
+                        <option class="fw-light" value="2">ติชม / ข้อเสนอแนะ</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="mb-3">
+                        <label for="description" class="form-label">กรุณากรอกรายละเอียด <span class="text-danger"> *</span></label>
+                        <textarea class="form-control" name="description" id="description" rows="2"></textarea>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="mb-3">
+                        <label class="form-label">แนบรายละเอียด (ถ้ามี)</label>
+                        <input class="form-control fw-light" type="file">
+                    </div>
+                </div>
+            </div>
+            <img src="img/hero_long2_transparent.png" alt="Description" class="outside-image">
+            <button type="submit" class="btn btn-primary">ส่งข้อมูล</button>
+        </form>
     </div>
-</section>
+<!-- </section> -->
+<style>
+.outside-image {
+    position: absolute;
+    right: 0px;
+    /* height: 150px; */
+    /* z-index: -1; */
+    -webkit-mask-image: linear-gradient(to left, black 0%, transparent 100%);
+    mask-image: linear-gradient(to left, black 0%, transparent 100%);
+}
+
+@media (max-width: 1000px) {
+    .outside-image {
+        display: none;
+    }
+}
+</style>
+
 
 
 <!-- Footer -->
@@ -286,12 +362,12 @@
             <div class="container">
                 <div class="row">
                     <div class="col-sm-6 col-lg-3 item">
-                        <h3>Services</h3>
+                        <h3>งานบริการ</h3>
                         <ul>
-                            <li><a href="#">งานบริการ 1</a></li>
-                            <li><a href="">งานบริการ 2</a></li>
-                            <li><a href="">งานบริการ 3</a></li>
-                            <li><a href="#">งานบริการ 4</a></li>
+                            <li><a href="#">ตรวจคัดกรองความผิดปกติของโครโมโซม<br>ของทารกในครรภ์ด้วยวิธี NIPT</a></li>
+                            <li><a href="">ตรวจการกลายพันธุ์ของยีน BRCA1/BRCA2<br>ด้วยเทคนิค Next-Generation Sequencing</a></li>
+                            <li><a href="">ค้นหาการกลายพันธุ์ของยีน BRCA1/BRCA2<br>เฉพาะตำแหน่ง (Sanger Sequencing)</a></li>
+                            <li><a href="#">ตรวจพันธุกรรมของยีนแพ้ยาต้านวัณโรค NAT2 diploytype</a></li>
                             <li><a href="#">งานบริการ 5</a></li>
                         </ul>
                     </div>

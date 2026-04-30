@@ -5,10 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <title>หน้าแรก | Genomics Medicine Center</title>
-    <!-- <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script> -->
     <link rel="stylesheet" href="assets/bootstrap.min.css">
     <script type="text/javascript" src="assets/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="assets/fontawesosome-free/css/all.min.css">
+    <script type="text/javascript" src="assets/jquery.min.js"></script>
+
+
+    
+    <link rel="stylesheet" href="assets/datatables/datatables.css">
+    <script type="text/javascript" src="assets/datatables/datatables.js"></script>
 
     <link rel="stylesheet" href="css/main.css">
 </head>
@@ -129,7 +134,7 @@
 <!-- About -->
 <section class="bg-light shadow">
     <div class="container text-center">
-        <h2 class="fw-bold">เกี่ยวกับหน่วยงาน</h2>
+        <h2 class="fw-semibold">เกี่ยวกับหน่วยงาน</h2>
         <div class="d-flex align-items-center justify-content-center my-4">
             <img src="img/logo/logo_dmsc.png" class="me-5" style="height: 160px;" alt="">
             <img src="img/logo/logo_gmc.png" style="height: 155px;" alt="">
@@ -164,7 +169,7 @@
 <!-- Services -->
 <!-- <section class=""> -->
     <section class="container text-center">
-        <h2 class="fw-bold mb-5">งานบริการของศูนย์การแพทย์จีโนมิกส์</h2>
+        <h2 class="fw-semibold mb-5">งานบริการของศูนย์การแพทย์จีโนมิกส์</h2>
         <div class="row g-4">
             <div class="col-md-4">
                 <a href="">
@@ -278,14 +283,91 @@
 <!-- </section> -->
 
 
+<div class="container mb-5">
+    <!-- <div class="text-center mb-4"> -->
+        <h3 class="fw-semibold">ใบนำส่งตัวอย่าง</h3>
+    <!-- </div> -->
+
+
+    <div class="table-responsive bg-white p-4 shadow rounded">
+        <table class="table table-hover table-striped css-serial" id="myTable">
+            <thead>
+                <tr>
+                <th class="fw-light text-center" scope="col">#</th>
+                <th class="fw-light" scope="col">ชื่อการทดสอบ</th>
+                <th class="fw-light" scope="col">วันที่อัพโหลด</th>
+                <th class="fw-light" scope="col">Download</th>
+                </tr>
+            </thead>
+            <tbody class="table-group-divider">
+                <tr>
+                    <th  class="fw-light text-center" scope="row">1</th>
+                    <td></td>
+                    <td></td>
+                    <td><a href=""><i class="fa-solid fa-cloud-arrow-down"></i></a></td>
+                </tr>
+                <tr>
+                    <th  class="fw-light text-center" scope="row">1</th>
+                    <td></td>
+                    <td></td>
+                    <td><a href=""><i class="fa-solid fa-cloud-arrow-down"></i></a></td>
+                </tr>
+                <tr>
+                    <th  class="fw-light text-center" scope="row">1</th>
+                    <td></td>
+                    <td></td>
+                    <td><a href=""><i class="fa-solid fa-cloud-arrow-down"></i></a></td>
+                </tr>
+                <tr>
+                    <th  class="fw-light text-center" scope="row">1</th>
+                    <td></td>
+                    <td></td>
+                    <td><a href=""><i class="fa-solid fa-cloud-arrow-down"></i></a></td>
+                </tr>
+                <tr>
+                    <th  class="fw-light text-center" scope="row">1</th>
+                    <td></td>
+                    <td></td>
+                    <td><a href=""><i class="fa-solid fa-cloud-arrow-down"></i></a></td>
+                </tr>
+                <tr>
+                    <th  class="fw-light text-center" scope="row">1</th>
+                    <td></td>
+                    <td></td>
+                    <td><a href=""><i class="fa-solid fa-cloud-arrow-down"></i></a></td>
+                </tr>
+                <tr>
+                    <th  class="fw-light text-center" scope="row">1</th>
+                    <td></td>
+                    <td></td>
+                    <td><a href=""><i class="fa-solid fa-cloud-arrow-down"></i></a></td>
+                </tr>
+                <tr>
+                    <th  class="fw-light text-center" scope="row">1</th>
+                    <td></td>
+                    <td></td>
+                    <td><a href=""><i class="fa-solid fa-cloud-arrow-down"></i></a></td>
+                </tr>
+                <tr>
+                    <th  class="fw-light text-center" scope="row">1</th>
+                    <td></td>
+                    <td></td>
+                    <td><a href=""><i class="fa-solid fa-cloud-arrow-down"></i></a></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+</div>
+
 
 
 <!-- Complain -->
 <!-- <section class=""> -->
     <div class="container mb-5">
-        <div class="text-center mb-4">
-            <h2 class="fw-bold">ข้อเสนอแนะ / ข้อร้องเรียน</h2>
-        </div>
+        <!-- <div class="text-center mb-4"> -->
+            <h3 class="fw-semibold">ข้อเสนอแนะ / ข้อร้องเรียน</h3>
+        <!-- </div> -->
         <form action="" method="POST" class="p-5 rounded shadow bg-white">
             <div class="row">
                 <div class="col-md-3">
@@ -327,8 +409,8 @@
             <div class="row">
                 <div class="col-md-6">
                     <div class="mb-3">
-                        <label class="form-label">แนบรายละเอียด (ถ้ามี)</label>
-                        <input class="form-control fw-light" type="file">
+                        <label for="formFile" class="form-label">แนบรายละเอียด (ถ้ามี)</label>
+                        <input class="form-control" type="file" id="formFile">
                     </div>
                 </div>
             </div>
@@ -383,13 +465,29 @@
                         <p></p>
                     </div>
                     <div class="col item social">
-                        <a href="#" target="_blank"><i class="bi bi-facebook"></i></a>
-                        <a href="#"><i class="bi bi-line"></i></a>
+                        <a href="https://www.facebook.com/mlsidmsc" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-solid fa-envelope"></i></a>
                         <!--<a href="#"><i class="bi bi-youtube"></i></a></div>-->
                 </div>
                 <p class="copyright">Copyright &copy; <script>document.write(new Date().getFullYear())</script> Genomics Medicine Center, All Right Reserved.</p>
             </div>
         </footer>
 </section>
+
+
+
+
+
+    <script>
+
+
+    var table = $('#myTable').DataTable({
+                'paging': true,
+                pageLength: 20
+            });
+
+    var length = table.rows().count();;
+    document.getElementById("rowcount").innerHTML = '(' + length + ' Items)';
+    </script>
 </body>
 </html>

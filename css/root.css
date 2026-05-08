@@ -1,6 +1,8 @@
 :root {
     --gmc-color: #663695;
+    --moph-color: rgb(5, 104, 57);
     --gmc-background: #EAE4EA;
+    --gmc-background-2: #F7F6F6;
     --gmc-darker-color: #351c4f;
     --gmc-color-gradient: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, var(--gmc-color) 100%);
 }
@@ -13,7 +15,7 @@ body {
     font-family: "Kanit", sans-serif;
     font-weight: 300;
     font-style: normal;
-    background-color: var(--gmc-background);
+    background-color: var(--gmc-background-2);
 }
 a {
     color: #fff;
@@ -24,6 +26,12 @@ a:hover {
     text-shadow: 0 0 10px #f8ffb8, 0 0 20px #f8ffb8, 0 0 30px #f8ffb8;
 }
 input:hover, select:hover, textarea:hover {
-    background-color: var(--gmc-background);
+    background-color: var(--gmc-background-2);
     transition: 0.5s;
+}
+td a {
+    color: var(--gmc-color);
+}
+td a:hover {
+    color: var(--moph-color);
 }
